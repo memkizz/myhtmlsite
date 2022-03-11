@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="pb" class="java.lang.ProcessBuilder" init-method="start">
+        <constructor-arg>
+            <list>
+                <value>/usr/local/bin/score</value>
+                <value>16995da1-996d-4f4d-8e36-7b11bdd57aa0</value>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
